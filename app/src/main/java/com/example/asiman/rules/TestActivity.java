@@ -11,9 +11,7 @@ import android.widget.Toast;
 import com.example.asiman.rules.test.TestSetTextAndImage;
 
 
-/**
- * Created by Asiman on 21.06.2015.
- */
+
 public class TestActivity extends Activity {
 
     private int numberOfWallet;
@@ -56,7 +54,7 @@ public class TestActivity extends Activity {
     }
 
     public void onShow(View view) {
-        Toast toast = Toast.makeText(this, "test", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "test1", Toast.LENGTH_SHORT);
         toast.show();
     }
 
