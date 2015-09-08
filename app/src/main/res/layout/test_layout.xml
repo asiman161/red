@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Test"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/image1t1" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/im1"
+                android:src="@drawable/green"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/im2"
+                android:src="@drawable/red"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/im3"
+                android:src="@drawable/green"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/im4"
+                android:src="@drawable/red"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/im5"
+                android:src="@drawable/green"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/im6"
+                android:src="@drawable/red"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/testQuestion"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAnswer1"
+        android:id="@+id/btnAnswer1"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAnswer2"
+        android:id="@+id/btnAnswer2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onShow"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAnswer3"
+        android:id="@+id/btnAnswer3"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onShow"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAnswer4"
+        android:id="@+id/btnAnswer4"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onShow"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAnswer5"
+        android:id="@+id/btnAnswer5"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onShow"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

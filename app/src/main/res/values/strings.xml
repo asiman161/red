@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Rules</string>
+    <string name="btnLogo1">билеты</string>
+    <string name="btnLogo2">экзамен</string>
+    <string name="btnLogo3">ПДД</string>
+    <string name="btnLogo4">статистика</string>
+
+    <string name="btnAnswer1">ответ1</string>
+    <string name="btnAnswer2">ответ2</string>
+    <string name="btnAnswer3">ответ3</string>
+    <string name="btnAnswer4">ответ4</string>
+    <string name="btnAnswer5">ответ5</string>
+
+</resources>
