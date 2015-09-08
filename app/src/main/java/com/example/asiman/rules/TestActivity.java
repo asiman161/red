@@ -54,7 +54,7 @@ public class TestActivity extends Activity {
     }
 
     public void onShow(View view) {
-        Toast toast = Toast.makeText(this, "test", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "test123", Toast.LENGTH_SHORT);
         toast.show();
     }
 
