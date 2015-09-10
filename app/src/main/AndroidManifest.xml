@@ -16,6 +16,7 @@
         <activity android:name=".StatisticActivity"/>
         <activity android:name=".TestActivity"/>
         <activity android:name=".TicketsActivity"/>
+        <activity android:name=".EndActivity"/>
 
     </application>
 
