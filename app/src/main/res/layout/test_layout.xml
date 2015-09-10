@@ -85,7 +85,7 @@
         android:text="@string/btnAnswer2"
         android:id="@+id/btnAnswer2"
         android:layout_gravity="center_horizontal"
-        android:onClick="onShow"
+        android:onClick="onClick"
         android:textAllCaps="false"/>
     <Button
         android:layout_width="wrap_content"
@@ -93,7 +93,7 @@
         android:text="@string/btnAnswer3"
         android:id="@+id/btnAnswer3"
         android:layout_gravity="center_horizontal"
-        android:onClick="onShow"
+        android:onClick="onClick"
         android:textAllCaps="false"/>
     <Button
         android:layout_width="wrap_content"
@@ -101,7 +101,7 @@
         android:text="@string/btnAnswer4"
         android:id="@+id/btnAnswer4"
         android:layout_gravity="center_horizontal"
-        android:onClick="onShow"
+        android:onClick="onClick"
         android:textAllCaps="false"/>
     <Button
         android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
         android:text="@string/btnAnswer5"
         android:id="@+id/btnAnswer5"
         android:layout_gravity="center_horizontal"
-        android:onClick="onShow"
+        android:onClick="onClick"
         android:textAllCaps="false"/>
 
 </LinearLayout>

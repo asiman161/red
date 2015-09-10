@@ -7,10 +7,7 @@ import com.example.asiman.rules.R;
  */
 public class Ticket3 {
 
-    private int index;
-    private String question;
-    private int image;
-    private int numberOfAnswer;
+
 
     public Ticket3(int index) {
         this.index = index;
@@ -31,22 +28,37 @@ public class Ticket3 {
         return numberOfAnswer;
     }
 
+    public int getIndexOfRightAnswer(){
+        question(index);
+        return indexOfRightAnswer;
+    }
+
+    private int index;
+    private String question;
+    private int image;
+    private int numberOfAnswer;
+    private int indexOfRightAnswer;
+
+
     public void question(int index) {
         switch (index) {
             case 1:
                 this.question = "вопрос 1 билет 3";
                 this.image = R.drawable.image1t3;
                 this.numberOfAnswer = 2;
+                this.indexOfRightAnswer = 1;
                 break;
             case 2:
                 this.question = "вопрос 2 билет 3";
                 this.image = R.drawable.image2t3;
                 this.numberOfAnswer = 5;
+                this.indexOfRightAnswer = 1;
                 break;
             case 3:
                 this.question = "вопрос 3 билет 3";
                 this.image = R.drawable.image2t3;
                 this.numberOfAnswer = 2;
+                this.indexOfRightAnswer = 1;
                 break;
             case 4:
                 this.question = "вопрос 4 билет 3";

@@ -8,8 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.asiman.rules.test.CheckTheAnswer;
 import com.example.asiman.rules.test.TestSetTextAndImage;
-
 
 
 public class TestActivity extends Activity {
@@ -18,7 +18,7 @@ public class TestActivity extends Activity {
     private TextView testQuestion;
     private ImageView imageView;
     private int indexOfQuestion = 1;
-    TestSetTextAndImage tsi = new TestSetTextAndImage();
+    TestSetTextAndImage tstai = new TestSetTextAndImage();
     Button btn1;
     Button btn2;
     Button btn3;
@@ -34,9 +34,9 @@ public class TestActivity extends Activity {
         numberOfWallet = getIntent().getIntExtra("numberWallet", 0);
 
         testQuestion = (TextView) findViewById(R.id.testQuestion);
-        testQuestion.setText(tsi.getQuestions(numberOfWallet, indexOfQuestion));
+        testQuestion.setText(tstai.getQuestions(numberOfWallet, indexOfQuestion));
         imageView = (ImageView) findViewById(R.id.imageView2);
-        imageView.setImageResource(tsi.getImage(numberOfWallet, indexOfQuestion));
+        imageView.setImageResource(tstai.getImage(numberOfWallet, indexOfQuestion));
 
         btn1 = (Button) findViewById(R.id.btnAnswer1);
         btn2 = (Button) findViewById(R.id.btnAnswer2);
@@ -53,40 +53,37 @@ public class TestActivity extends Activity {
         indexOfQuestion += 1;
     }
 
-    public void onShow(View view) {
-        Toast toast = Toast.makeText(this, "test123", Toast.LENGTH_SHORT);
-        toast.show();
-    }
 
     public void onClick(View view) {
-        testQuestion.setText(tsi.getQuestions(numberOfWallet, indexOfQuestion));
-        imageView.setImageResource(tsi.getImage(numberOfWallet, indexOfQuestion));
+        testQuestion.setText(tstai.getQuestions(numberOfWallet, indexOfQuestion));
+        imageView.setImageResource(tstai.getImage(numberOfWallet, indexOfQuestion));
         setAnswerButton(numberOfWallet, indexOfQuestion);
+        checkTheAnswer(numberOfWallet, indexOfQuestion, view);
         indexOfQuestion += 1;
     }
 
     public void setAnswerButton(int numberOfWallet, int indexOfQuestion) {
 
-        int num = tsi.getNumberOfAnswer(numberOfWallet, indexOfQuestion);
-        if (num == 2) {
+        int index = tstai.getNumberOfAnswer(numberOfWallet, indexOfQuestion);
+        if (index == 2) {
             btn1.setVisibility(View.VISIBLE);
             btn2.setVisibility(View.VISIBLE);
             btn3.setVisibility(View.INVISIBLE);
             btn4.setVisibility(View.INVISIBLE);
             btn5.setVisibility(View.INVISIBLE);
-        } else if (num == 3) {
+        } else if (index == 3) {
             btn1.setVisibility(View.VISIBLE);
             btn2.setVisibility(View.VISIBLE);
             btn3.setVisibility(View.VISIBLE);
             btn4.setVisibility(View.INVISIBLE);
             btn5.setVisibility(View.INVISIBLE);
-        } else if (num == 4) {
+        } else if (index == 4) {
             btn1.setVisibility(View.VISIBLE);
             btn2.setVisibility(View.VISIBLE);
             btn3.setVisibility(View.VISIBLE);
             btn4.setVisibility(View.VISIBLE);
             btn5.setVisibility(View.INVISIBLE);
-        } else if (num == 5) {
+        } else if (index == 5) {
             btn1.setVisibility(View.VISIBLE);
             btn2.setVisibility(View.VISIBLE);
             btn3.setVisibility(View.VISIBLE);
@@ -94,5 +91,14 @@ public class TestActivity extends Activity {
             btn5.setVisibility(View.VISIBLE);
         }
     }
+
+    public void checkTheAnswer(int numberOfWallet, int indexOfQuestion, View view){
+        CheckTheAnswer check = new CheckTheAnswer();
+        if(check.checkTheAnswer(numberOfWallet,indexOfQuestion,view))
+            Toast.makeText(this, "Верный ответ", Toast.LENGTH_SHORT).show();
+        else
+            Toast.makeText(this, "Неверный ответ", Toast.LENGTH_SHORT).show();
+        }
+
 
 }
