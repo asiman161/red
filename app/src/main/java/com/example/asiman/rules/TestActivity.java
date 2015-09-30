@@ -20,6 +20,7 @@ public class TestActivity extends Activity {
     private ImageView imageView;
     private int numberOfRightAnswers = 0;
     private int numberOfQuestion = 1;
+    private boolean rightOrNot;
     TestSetTextAndImage tstai = new TestSetTextAndImage();
     Button btn1;
     Button btn2;
@@ -105,11 +106,17 @@ public class TestActivity extends Activity {
         CheckTheAnswer check = new CheckTheAnswer();
         if(check.checkTheAnswer(numberOfWallet,numberOfQuestion,view)) {
             numberOfRightAnswers+=1;
-            Toast.makeText(this, String.valueOf(numberOfRightAnswers) + " - " + String.valueOf(this.numberOfQuestion), Toast.LENGTH_SHORT).show();
-
+            Toast.makeText(this, "Верный ответ", Toast.LENGTH_SHORT).show();
         }
         else
             Toast.makeText(this, "Неверный ответ", Toast.LENGTH_SHORT).show();
         }
+
+    /*public void setImageRedOrGreen(int index){
+        switch (index){
+            case 1:
+                rightOrNot ?
+        }
+    }*/
 
 }

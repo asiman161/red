@@ -15,7 +15,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView2"
-        android:src="@drawable/image1t1" />
+        android:src="@drawable/image1t1"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/INF" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -30,33 +32,123 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/im1"
-                android:src="@drawable/green"/>
+                android:id="@+id/img1"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/im2"
-                android:src="@drawable/red"/>
+                android:id="@+id/img2"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/im3"
-                android:src="@drawable/green"/>
+                android:id="@+id/img3"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/im4"
-                android:src="@drawable/red"/>
+                android:id="@+id/img4"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/im5"
-                android:src="@drawable/green"/>
+                android:id="@+id/img5"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/im6"
-                android:src="@drawable/red"/>
+                android:id="@+id/img6"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img7"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img8"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img9"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img10"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img11"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img12"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img13"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img14"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img15"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img16"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img17"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img18"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img19"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img20"
+                android:src="@drawable/grey"
+                android:contentDescription="@string/INF"/>
 
         </LinearLayout>
 

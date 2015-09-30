@@ -17,6 +17,7 @@
         android:text="New Button"
         android:id="@+id/ticket1"
         android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
         android:onClick="goToTestActivity" />
 
     <Button
@@ -25,6 +26,7 @@
         android:text="New Button"
         android:id="@+id/ticket2"
         android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
         android:onClick="goToTestActivity" />
 
     <Button
@@ -33,5 +35,6 @@
         android:text="New Button"
         android:id="@+id/ticket3"
         android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
         android:onClick="goToTestActivity" />
 </LinearLayout>
