@@ -9,8 +9,7 @@ import android.view.View;
  * Created by Asiman on 07.06.2015.
  */
 public class MainActivity extends Activity {
-
-
+//test
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
