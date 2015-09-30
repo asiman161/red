@@ -30,7 +30,8 @@
         android:layout_alignTop="@+id/btnLogo1"
         android:layout_centerHorizontal="true"
         android:textAllCaps="false"
-        android:onClick="goToExamActivity" />
+        android:onClick="goToExamActivity"
+        android:visibility="visible" />
 
     <Button
         android:layout_width="wrap_content"
@@ -41,7 +42,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textAllCaps="false"
-        android:onClick="goToRulesActivity" />
+        android:onClick="goToRulesActivity"
+        android:visibility="visible" />
 
     <Button
         android:layout_width="wrap_content"
@@ -51,6 +53,17 @@
         android:layout_below="@+id/btnLogo2"
         android:layout_centerHorizontal="true"
         android:textAllCaps="false"
-        android:onClick="goToStatisticActivity" />
+        android:onClick="goToStatisticActivity"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Работает только кнопка билеты, остальные лишь макет"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/btnLogo4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:textSize="30dp" />
 
 </RelativeLayout>
