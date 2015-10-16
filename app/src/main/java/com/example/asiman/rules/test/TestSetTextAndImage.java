@@ -1,6 +1,8 @@
 package com.example.asiman.rules.test;
 
 
+import com.example.asiman.rules.R;
+
 /**
  * Created by Asiman on 27.06.2015.
  */
@@ -26,10 +28,18 @@ public class TestSetTextAndImage {
         return indexOfRightAnswer;
     }
 
+    public int getRightImage(boolean flag){
+        if(flag)
+            return R.drawable.green;
+        else
+            return R.drawable.red;
+    }
+
     private int indexOfRightAnswer;
     private String questions;
     private int image;
     private int numberOfAnswer;
+    private int flag;
 
     public void setProperties(int indexOfWallet, int indexOfQuestion){
         switch(indexOfWallet){
