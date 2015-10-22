@@ -11,6 +11,8 @@
     <string name="btnAnswer4">ответ4</string>
     <string name="btnAnswer5">ответ5</string>
 
-    <string name="INF">Image bot found</string>
+    <string name="INF">Image not found</string>
+
+
 
 </resources>

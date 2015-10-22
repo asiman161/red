@@ -20,12 +20,12 @@ public class TestActivity extends Activity {
     private ImageView imageView;
     private int numberOfRightAnswers = 0;
     private int numberOfQuestion = 1;
-    TestSetTextAndImage tstai = new TestSetTextAndImage();
-    Button btn1;
-    Button btn2;
-    Button btn3;
-    Button btn4;
-    Button btn5;
+    private TestSetTextAndImage tstai = new TestSetTextAndImage();
+    private Button btn1;
+    private Button btn2;
+    private Button btn3;
+    private Button btn4;
+    private Button btn5;
     private ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20;
 
 
@@ -53,6 +53,12 @@ public class TestActivity extends Activity {
         btn5.setVisibility(View.INVISIBLE);
         setAnswerButton(numberOfWallet, numberOfQuestion);
 
+        btn1.setText(tstai.getButtonAnswer1(numberOfWallet, numberOfQuestion));
+        btn2.setText(tstai.getButtonAnswer2(numberOfWallet, numberOfQuestion));
+        btn3.setText(tstai.getButtonAnswer3(numberOfWallet, numberOfQuestion));
+        btn4.setText(tstai.getButtonAnswer4(numberOfWallet, numberOfQuestion));
+        btn5.setText(tstai.getButtonAnswer5(numberOfWallet, numberOfQuestion));
+
         img1 = (ImageView) findViewById(R.id.img1);
         img2 = (ImageView) findViewById(R.id.img2);
         img3 = (ImageView) findViewById(R.id.img3);
@@ -79,6 +85,9 @@ public class TestActivity extends Activity {
 
 
     public void onClick(View view) {
+
+
+
         if (numberOfQuestion <= 20) {
             testQuestion.setText(tstai.getQuestions(numberOfWallet, numberOfQuestion));
             imageView.setImageResource(tstai.getImage(numberOfWallet, numberOfQuestion));
@@ -121,6 +130,12 @@ public class TestActivity extends Activity {
             btn4.setVisibility(View.VISIBLE);
             btn5.setVisibility(View.VISIBLE);
         }
+
+        btn1.setText(tstai.getButtonAnswer1(numberOfWallet, numberOfQuestion));
+        btn2.setText(tstai.getButtonAnswer2(numberOfWallet, numberOfQuestion));
+        btn3.setText(tstai.getButtonAnswer3(numberOfWallet, numberOfQuestion));
+        btn4.setText(tstai.getButtonAnswer4(numberOfWallet, numberOfQuestion));
+        btn5.setText(tstai.getButtonAnswer5(numberOfWallet, numberOfQuestion));
     }
 
     public void checkTheAnswer(int numberOfWallet, int numberOfQuestion, View view) {

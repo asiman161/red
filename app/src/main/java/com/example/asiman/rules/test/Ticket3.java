@@ -13,6 +13,12 @@ public class Ticket3 {
         this.index = index;
     }
 
+    private int index;
+    private String question;
+    private int image;
+    private int numberOfAnswer;
+    private int indexOfRightAnswer;
+
     public int getImage() {
         question(index);
         return image;
@@ -32,12 +38,6 @@ public class Ticket3 {
         question(index);
         return indexOfRightAnswer;
     }
-
-    private int index;
-    private String question;
-    private int image;
-    private int numberOfAnswer;
-    private int indexOfRightAnswer;
 
 
     public void question(int index) {
