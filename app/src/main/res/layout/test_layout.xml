@@ -163,7 +163,7 @@
         android:layout_gravity="center_horizontal" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="350sp"
         android:layout_height="wrap_content"
         android:text="@string/btnAnswer1"
         android:id="@+id/btnAnswer1"
@@ -172,7 +172,7 @@
         android:textAllCaps="false"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="350sp"
         android:layout_height="wrap_content"
         android:text="@string/btnAnswer2"
         android:id="@+id/btnAnswer2"
@@ -180,7 +180,7 @@
         android:onClick="onClick"
         android:textAllCaps="false"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="350sp"
         android:layout_height="wrap_content"
         android:text="@string/btnAnswer3"
         android:id="@+id/btnAnswer3"
@@ -188,7 +188,7 @@
         android:onClick="onClick"
         android:textAllCaps="false"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="350sp"
         android:layout_height="wrap_content"
         android:text="@string/btnAnswer4"
         android:id="@+id/btnAnswer4"
@@ -196,7 +196,7 @@
         android:onClick="onClick"
         android:textAllCaps="false"/>
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="350sp"
         android:layout_height="wrap_content"
         android:text="@string/btnAnswer5"
         android:id="@+id/btnAnswer5"
