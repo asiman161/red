@@ -84,7 +84,7 @@ public class Ticket1 {
                 this.buttonAnswer4 = "ответ4в1т1-";
                 this.buttonAnswer5 = "ответ5в1т1-";
                 break;
-            case 2:
+            case 2://////////////////////////////////////////////////
                 this.question = "В каких направлениях Вам разрешено продолжить движение?";
                 this.image = R.drawable.image2t1;
                 this.numberOfAnswer = 3;
