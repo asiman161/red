@@ -14,7 +14,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="1(full)"
         android:id="@+id/ticket1"
         android:layout_gravity="center_horizontal"
         android:textAllCaps="false"
@@ -23,7 +23,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="2(clear)"
         android:id="@+id/ticket2"
         android:layout_gravity="center_horizontal"
         android:textAllCaps="false"
@@ -32,7 +32,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="3(clear)"
         android:id="@+id/ticket3"
         android:layout_gravity="center_horizontal"
         android:textAllCaps="false"

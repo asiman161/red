@@ -27,6 +27,7 @@ public class TestActivity extends Activity {
     private Button btn4;
     private Button btn5;
     private ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img19, img20;
+    private boolean back = false; //проверка, не вернулся ли пользователь назад что бы набрать больше очков
 
 
     @Override
@@ -85,10 +86,8 @@ public class TestActivity extends Activity {
 
 
     public void onClick(View view) {
-
-
-
         if (numberOfQuestion <= 20) {
+            back = false;
             testQuestion.setText(tstai.getQuestions(numberOfWallet, numberOfQuestion));
             imageView.setImageResource(tstai.getImage(numberOfWallet, numberOfQuestion));
             setAnswerButton(numberOfWallet, numberOfQuestion);
@@ -103,7 +102,6 @@ public class TestActivity extends Activity {
     }
 
     public void setAnswerButton(int numberOfWallet, int indexOfQuestion) {
-
         int index = tstai.getNumberOfAnswer(numberOfWallet, indexOfQuestion);
         if (index == 2) {
             btn1.setVisibility(View.VISIBLE);
@@ -140,15 +138,21 @@ public class TestActivity extends Activity {
 
     public void checkTheAnswer(int numberOfWallet, int numberOfQuestion, View view) {
         CheckTheAnswer check = new CheckTheAnswer();
-        if (check.checkTheAnswer(numberOfWallet, numberOfQuestion, view)) {
-            numberOfRightAnswers += 1;
-            setImageRedOrGreen(numberOfQuestion, true);
-            Toast.makeText(this, "Верный ответ", Toast.LENGTH_SHORT).show();
-        } else {
-            setImageRedOrGreen(numberOfQuestion, false);
-            Toast.makeText(this, "Неверный ответ", Toast.LENGTH_SHORT).show();
+        if (!back) {
+            if(numberOfQuestion == 20)
+            back = true;
+            if (check.checkTheAnswer(numberOfWallet, numberOfQuestion, view)) {
+                numberOfRightAnswers += 1;
+
+                setImageRedOrGreen(numberOfQuestion, true);
+                Toast.makeText(this, "Верный ответ", Toast.LENGTH_SHORT).show();
+            } else {
+                setImageRedOrGreen(numberOfQuestion, false);
+                Toast.makeText(this, "Неверный ответ", Toast.LENGTH_SHORT).show();
+            }
         }
     }
+
 
     public void setImageRedOrGreen(int index, boolean flag) {
         switch (index) {
